@@ -41,3 +41,8 @@ Alternatively, start lightboard-vmix-bridge with the IP address of VMIX as an ar
 | TOP  | Runs VMIX Script called "TOP" (via "ScriptStart")  |
 | SCENE  | Runs VMIX Script called "SCENE"  (via "ScriptStart")  |
 | SCN,3  | Runs DataSourceSelectRow on VMIX Data Source called "Scenes" with value of 3 (you can define any integer).  Then runs VMIX Script called "GFXSCENE" (via "ScriptStart")  |
+
+
+### Notes
+
+There is a 6 second "cooldown" time between commands.  This allows time for an operator to go back, then forward, 1 cue without double-triggering a VMIX API call.
