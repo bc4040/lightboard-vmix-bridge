@@ -38,9 +38,9 @@ Alternatively, start lightboard-vmix-bridge with the IP address of VMIX as an ar
 
 | UDP String  | VMIX API Call |
 | ------------- | ------------- |
-| TOP  | Runs VMIX Script called "TOP" (via "ScriptStart")  |
-| SCENE  | Runs VMIX Script called "SCENE"  (via "ScriptStart")  |
-| SCN,3  | Runs DataSourceSelectRow on VMIX Data Source called "Scenes" with value of 3 (you can define any integer).  Then runs VMIX Script called "GFXSCENE" (via "ScriptStart")  |
+| TOP  | Function=ScriptStart&Value=TOP |
+| SCENE  | Function=ScriptStart&Value=SCENE  |
+| SCN,3  | Function=DataSourceSelectRow&Value=Scenes,3<br>  Function=ScriptStart&Value=GFXSCENE  |
 
 
 ### Notes
